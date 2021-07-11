@@ -1,0 +1,19 @@
+Requires MrPlague's Races.
+Best played (thematically) with mechanical summons and sentries.
+
+Protogens! is a mod that adds, well... Protogens!
+If something here doesn't seem quite right, please keep in mind that this is my first mod for terraria!
+
+Protogens, being part machine, are gifted tinkerers and skilled machinists. Their expertise with fine machinery and technology allows them to raise mechanical armies when left to their own devices. (Very good summoner.)
+
+With minds of metal and wire, they have split-second reactions and reliably strike true with modern arms and ordinance, although they are not optimized for use of bows very well. (Bonus damage to Bullets and Rockets, Damage penalty to Arrows)
+
+Due to always having power tools handy, they never needed any major muscle mass. (Bad at melee, mines slower with pickaxes.)
+
+Because Protogens are masters of technology, the magics completely dumbfound them. Protogens simply do not understand how magic works in the slightest, and as such have great difficulty using it. (Terrible as mages.)
+
+Because of a protogen's handiness, they often make backup drones, called upon when they need a threat eliminated, and now. Upon pressing the Active Ability Key, an air support drone is summoned, eqipped with a machinegun, to come to your aid. It's only a prototype, but you suspect you have a few ideas for it... (Drone upgrades as bosses are defeated.)
+
+
+Credit goes to me for programming, my friend FishingHoek for most of the sprites, my friend Berserker_Zero for balance advice, and the TModLoader community for helping me out with minion AI.
+If you find any bugs, report them to "Exabyte the Protogen#6886" on discord so I can get them fixed!

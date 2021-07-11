@@ -1,0 +1,4 @@
+displayName = Protogens! by Exabyte
+author = Exabyte
+version = 1.0
+modReferences = MrPlagueRaces
