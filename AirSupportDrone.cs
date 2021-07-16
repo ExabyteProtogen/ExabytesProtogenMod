@@ -73,7 +73,8 @@ namespace ExabytesProtogenMod
 		{
 
 			Player player = Main.player[projectile.owner];
-            if (player.statLife > (player.statLifeMax2 / 0.75f))
+			//*
+            if (player.statLife > (player.statLifeMax * 0.75f))
             {
 				defenderMode = false;
             }
@@ -81,6 +82,8 @@ namespace ExabytesProtogenMod
             {
 				defenderMode = true;
             }
+			//*/
+
             //float spacing = (float)projectile.width * spacingMult;
 
             #region Progression
@@ -138,6 +141,7 @@ namespace ExabytesProtogenMod
 			float distanceFromTarget = viewDist;
 			Vector2 targetCenter = projectile.position;
 			bool foundTarget = false;
+			//DroneTargeting droneTargeting = player.GetModPlayer<ProtogenModPlayer>().targetingMode;
 
 			if (!foundTarget)
 			{
@@ -210,8 +214,8 @@ namespace ExabytesProtogenMod
 			#endregion
 			#region General behavior
 			Vector2 targetPosition;
-			Vector2 vectorToTargetPosition;
-			float distanceToTargetPosition;
+			Vector2 vectorToTargetPosition = Vector2.Zero;
+			float distanceToTargetPosition = 0f;
 
 			if (defenderMode)
 			{
@@ -230,7 +234,7 @@ namespace ExabytesProtogenMod
 					projectile.netUpdate = true;
 				}
 			}
-			else
+            else
 			{
                 if (foundTarget)
                 {

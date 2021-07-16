@@ -4,8 +4,8 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-/*
-namespace ExabytesProtogenMod
+//*
+namespace ExabytesProtogenMod.Items
 {
 	public class RamStick : ModItem
 	{
@@ -25,6 +25,8 @@ namespace ExabytesProtogenMod
 			item.maxStack = 30;
 			item.consumable = true;
 			item.UseSound = SoundID.Item2;
+			item.buffTime = 18000;
+			item.buffType = BuffID.WellFed;
 		}
 		public override bool CanUseItem(Player player)
 		{
@@ -39,17 +41,12 @@ namespace ExabytesProtogenMod
             }
 			return modPlayer.race is Common.Races.Protogens.Protogen && !player.HasBuff(BuffID.WellFed);
 		}
-		public override bool UseItem(Player player)
-		{
-			player.AddBuff(BuffID.WellFed, 18000);
-			return true;
-		}
 	}
 	class RamDrop : GlobalNPC
     {
         public override void NPCLoot(NPC npc)
         {
-            if ((npc.type == NPCID.Probe || npc.type == NPCID.MartianTurret) && Main.rand.Next(3) == 0)
+            if (((npc.type == NPCID.Probe || npc.type == NPCID.MartianTurret || npc.type == NPCID.DeadlySphere || npc.type == NPCID.MartianDrone) && Main.rand.Next(50) == 0) || (npc.type == NPCID.TheDestroyer || npc.type == NPCID.Retinazer || npc.type == NPCID.Spazmatism || npc.type == NPCID.SkeletronPrime || npc.type == NPCID.PrimeCannon || npc.type == NPCID.PrimeSaw || npc.type == NPCID.PrimeVice || npc.type == NPCID.PrimeLaser || npc.type == NPCID.MartianSaucer) && Main.rand.Next(4) == 0)
             {
 				Item.NewItem(npc.getRect(), ModContent.ItemType<RamStick>());
             }
